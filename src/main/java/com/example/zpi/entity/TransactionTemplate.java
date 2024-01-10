@@ -32,7 +32,8 @@ public class TransactionTemplate {
     @Column
     private Date executionDate;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @Column
+    @Enumerated(EnumType.STRING)
     private TransactionType transactionType;
 
     @ManyToOne(cascade = CascadeType.ALL)

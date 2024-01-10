@@ -18,4 +18,36 @@ public class Currency {
     @Column
     private String isoCode;
 
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getShort_Name() {
+        return short_Name;
+    }
+
+    public void setShort_Name(String short_Name) {
+        this.short_Name = short_Name;
+    }
+
+    public String getIsoCode() {
+        return isoCode;
+    }
+
+    public void setIsoCode(String isoCode) {
+        this.isoCode = isoCode;
+    }
 }

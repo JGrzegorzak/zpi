@@ -1,16 +1,9 @@
 package com.example.zpi.entity;
 
-import jakarta.persistence.*;
+public enum TransactionType {
 
-@Entity
-public class TransactionType {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column
-    private String name;
+    INCOME,
+    OUTCOME
 
 
 }

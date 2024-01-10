@@ -1,15 +1,8 @@
 package com.example.zpi.entity;
 
-import jakarta.persistence.*;
 
-@Entity
-public class AccountType {
+public enum AccountType {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column
-    private String name;
-
+    STUDENT,
+    ADMIN
 }

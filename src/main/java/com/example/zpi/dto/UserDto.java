@@ -1,46 +1,24 @@
-package com.example.zpi.entity;
-
-import jakarta.persistence.*;
+package com.example.zpi.dto;
 
 import java.util.Date;
 
+public class UserDto {
 
-@Entity
-public class User {
+    private final Long id;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column()
     private String name;
-
-    @Column()
     private String lastName;
-
-    @Column()
-    private String password;
-
-    @Column()
     private Date dateOfBirth;
-
-    @Column
     private String adress;
-
-    @Column
     private String email;
 
 
-    public User() {
+    public UserDto(Long id) {
+        this.id = id;
     }
-
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -57,14 +35,6 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public Date getDateOfBirth() {

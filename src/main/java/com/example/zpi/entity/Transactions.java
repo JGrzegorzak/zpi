@@ -14,7 +14,8 @@ public class Transactions {
     @ManyToOne(cascade = CascadeType.ALL)
     private Accounts accounts;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @Column
+    @Enumerated(EnumType.STRING)
     private TransactionType transactionType;
 
     @Column
